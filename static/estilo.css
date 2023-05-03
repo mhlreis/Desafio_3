@@ -1,0 +1,35 @@
+
+hr.linhasup{
+  color: rgb(111, 169, 231);
+}
+div.topo{
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: auto auto;
+ 
+}
+
+div.capa{
+  padding-top:20px;
+}
+
+/* div.capa>img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+} */
+
+div.rodape1 > h4{
+  text-align: center;
+}
+
+body{
+ padding: 0;
+ margin: 0 auto;
+ width: 900px;
+}
+
+div.capa{
+  resize: block;
+}
