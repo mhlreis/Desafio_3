@@ -1,16 +1,18 @@
-{%  extends "base.html" %}
+{% extends "base.html" %}
 
-{% block users %}
-
+{% block titulo %}
     <title>Usuários</title>
-    <main>
+{% endblock %}
+
+{% block conteudo %}
+    <main class="flex">
         <table>
             <tr>
                 <th>Email</th>
                 <th>Assunto</th>
                 <th>Descrição</th>
             </tr>
-            {%  for user in userDetails %}
+            {% for user in userDetails %}        
                 <tr>
                     <td>{{ user[0] }}</td>
                     <td>{{ user[1] }}</td>
@@ -20,11 +22,3 @@
         </table>
     </main>
 {% endblock %}
-
-<ul>
-    {% for user in userDetails %}
-    <li>Email: {{ user[0] }}</li>
-    <li>Assunto: {{ user[1] }}</li>
-    <li>Descrição: {{ user[2] }}</li>
-    {% endfor %}
-</ul>

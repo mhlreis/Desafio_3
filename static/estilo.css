@@ -33,3 +33,13 @@ body{
 div.capa{
   resize: block;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid black;
+}
